@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="30dp"
+        android:background="#fece2f">
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/dd"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/fullname_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="@string/name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/fullname_phu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_below="@id/fullname_field"
+            android:fontFamily="cursive"
+            android:includeFontPadding="false"
+            android:text="@string/namephu"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="-100dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#fece2f"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tien"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/label_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$123"
+                    android:includeFontPadding="false"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:id="@+id/label_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp"
+                    android:layout_below="@id/label_one"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#fece2f"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/booking"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/booking_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:includeFontPadding="false"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:id="@+id/booking_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp"
+                    android:layout_below="@id/booking_one"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:layout_marginBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/people_icon"
+                android:drawablePadding="5dp"
+                android:text="Phan Văn Tuấn"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_email"
+                android:drawablePadding="5dp"
+                android:text="Phantuan1542@gmail.com"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="10dp"
+                android:text="0763639952"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_pass"
+                android:drawablePadding="10dp"
+                android:text="Tuan1542"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:fontFamily="sans-serif-black"
+            android:background="#fece2f"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
